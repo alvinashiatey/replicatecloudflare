@@ -12,7 +12,7 @@ async function handler(c: Context) {
 		auth: c.env.REPLICATE_API_TOKEN,
 	});
 
-	if (!process.env.REPLICATE_API_TOKEN) {
+	if (!c.env.REPLICATE_API_TOKEN) {
 		return c.json({ message: 'REPLICATE_API_TOKEN not found', ok: false }, 500);
 	}
 
