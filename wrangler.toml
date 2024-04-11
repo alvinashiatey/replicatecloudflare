@@ -6,8 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
-[vars]
-REPLICATE_API_TOKEN = "YOUR_ REPLICATE_API_TOKEN_GOES_HERE"
+# [vars]
 
 # Bind the Workers AI model catalog. Run machine learning models, powered by serverless GPUs, on Cloudflare’s global network
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#workers-ai
